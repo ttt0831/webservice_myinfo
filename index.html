@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kyungsung Univ.</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+      li {
+        list-style: none;
+      }
+      .picture {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .picture li {
+        float: left;
+        width: 50%;
+      }
+      .picture li a {
+        display: block;
+        margin: 5px;
+        border: 1px;
+      }
+      .picture li img {
+        display: block;
+        width: 50%;
+        height: auto;
+      }
+      .picture li img:hover {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .ui-header {
+        background-color: #ffc0cb ;
+      }
+      .ui-header .ui-title {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div data-theme="a">
+      <div data-role="page" id="home">
+        <div data-role="header" data-theme="a">
+          <h1>이은정 홈페이지</h1>
+        </div>
+        <div data-role="content" style="text-align: center">
+          <img src="1-1.jpg" />
+          <ul data-role="listview" data-inset="true">
+            <li><a href="#intro">이은정 소개</a></li>
+            <li><a href="#movie" data-rel="dialog">이은정 경력</a></li>
+            <li><a href="#wizard3-1" data-rel="dialog">이은정 영상</a></li>
+            <li><a href="#gallery">이은정 사진</a></li>
+          </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+          <h1>소프트웨어학과 2020575045 이은정</h1>
+        </div>
+      </div>
+
+      <div data-role="page" id="intro" data-theme="a">
+        <div data-role="header" data-theme="a">
+          <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+          <!--arrow-l 왼쪽 arrow-r 오른쪽  -->
+          <h1>이은정 소개</h1>
+        </div>
+        <div data-role="content">
+          <div style="text-align: center">
+            <img src="1.jpg" />
+          </div>
+          <div
+            data-role="collapsible-set"
+            data-theme="a"
+            data-content-theme="e"
+          >
+            <div data-role="collapsible" data-collapsed="false">
+              <h3>학력</h3>
+              <p>
+                2020. 03. – 2024. 02.
+                경성대학교 소프트웨어학과
+                <br>2017. 03. – 2020. 02.
+                거제고등학교
+              </p>
+            </div>
+            <div data-role="collapsible">
+              <h3>인적사항</h3>
+              <p>생년월일 : 2001년 08월 31일
+                <br>휴대폰 : 010-8560-8737
+                <br>이메일 : ttt0831@naver.com
+              </p>
+            </div>
+            <div data-role="collapsible">
+              <h3>주소</h3>
+              <p>경상남도 거제시 장평1로 7 유림노르웨이숲 101동 4104호</p>
+            </div>
+          </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+          <h1>소프트웨어학과 2020575045 이은정</h1>
+        </div>
+      </div>
+
+      <div data-role="page" id="movie" data-theme="a">
+        <div data-role="header" data-position="fixed" data-theme="a">
+          <h1>이은정 경력</h1>
+        </div>
+        <div data-role="content">
+          <div class="ui-bar ui-bar-a">아르바이트 경력</div>
+          <br />
+          <li>
+            <div>
+              <h3>노래방 카운터 알바</h3>
+            <p>2022. 11. – 2022. 12.</p>
+            <br>
+            <h3>진로 참이슬 판촉</h3>
+            <p>2022. 08. – 2022. 09.</p>
+            <br>
+            <h3>무학 좋은데이 판촉 </h3>
+            <p>2020. 04. – 2020. 07.
+              </p>
+          </div>  
+          </li>
+          <br />
+        </div>
+        <div data-role="footer" data-theme="a"></div>
+      </div>
+
+      <div data-role="page" id="wizard3-1">
+        <div data-role="header" data-theme="a">
+          <h1>이은정 영상</h1>
+          <li>
+            <video controls width="100%" preload="metadata">
+              <source src="movie.mp4" type="video/mp4" />
+            </video>
+          </li>
+        </div>
+      </div>
+
+      <div data-role="page" id="gallery" data-theme="a">
+        <div data-role="header" data-position="fixed" data-theme="a">
+          <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+          <h1>이은정 사진모음</h1>
+        </div>
+        <div data-role="content">
+          <ul class="picture">
+            <li>
+              <a href="2.jpg" rel="external"><img src="2.jpg" /></a>
+            </li>
+            <li>
+              <a href="3.jpg" rel="external"><img src="3.jpg" /></a>
+            </li>
+            <li>
+              <a href="4.jpg" rel="external"><img src="4.jpg" /></a>
+            </li>
+            <li>
+              <a href="5.jpg" rel="external"><img src="5.jpg" /></a>
+            </li>
+            <li>
+              <a href="6.jpg" rel="external"><img src="6.jpg" /></a>
+            </li>
+            <li>
+              <a href="7.jpg" rel="external"><img src="7.jpg" /></a>
+            </li>
+            <li>
+              <a href="8.jpg" rel="external"><img src="8.jpg" /></a>
+            </li>
+            <li>
+              <a href="9.jpg" rel="external"><img src="9.jpg" /></a>
+            </li>
+            <li>
+              <a href="10.jpg" rel="external"><img src="10.jpg" /></a>
+            </li>
+            <li>
+              <a href="11.jpg" rel="external"><img src="11.jpg" /></a>
+            </li>
+            <li>
+                <a href="12.jpg" rel="external"><img src="12.jpg" /></a>
+              </li>
+              <li>
+                <a href="13.jpg" rel="external"><img src="13.jpg" /></a>
+              </li>
+          </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+          <h1>소프트웨어학과 2020575045 이은정</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
