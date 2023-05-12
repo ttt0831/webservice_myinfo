@@ -6,7 +6,7 @@
 
 1.
 ```.ui-header {
-       background-color: #ffa600;
+       background-color: #ffc0cb;
      }
      .ui-header .ui-title {
        font-weight: bold;
@@ -16,5 +16,7 @@
 ---
 2.
 
-```data-theme="a"
+```    <div data-theme="a">
+      <div data-role="page" id="home">
+        <div data-role="header" data-theme="a">
 원래 데이터 테마가 b였는데 a로 바꾸어 주면서 밝게 만들어줌.
